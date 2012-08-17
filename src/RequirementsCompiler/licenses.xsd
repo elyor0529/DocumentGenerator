@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="licenses"
+    targetNamespace="http://tempuri.org/licenses.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/licenses.xsd"
+    xmlns:mstns="http://tempuri.org/licenses.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:complexType name="License">
+    
+  </xs:complexType>
+  
+</xs:schema>

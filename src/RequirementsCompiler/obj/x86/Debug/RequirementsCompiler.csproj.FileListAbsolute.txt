@@ -1,0 +1,10 @@
+L:\Repositories\scaffeine\src\RequirementsCompiler\obj\x86\Debug\ResolveAssemblyReference.cache
+L:\Repositories\scaffeine\src\RequirementsCompiler\bin\Debug\RequirementsCompiler.exe
+L:\Repositories\scaffeine\src\RequirementsCompiler\bin\Debug\RequirementsCompiler.pdb
+L:\Repositories\scaffeine\src\RequirementsCompiler\obj\x86\Debug\RequirementsCompiler.exe
+L:\Repositories\scaffeine\src\RequirementsCompiler\obj\x86\Debug\RequirementsCompiler.pdb
+L:\Repositories\DocumentGenerator\src\RequirementsCompiler\obj\x86\Debug\RequirementsCompiler.exe
+L:\Repositories\DocumentGenerator\src\RequirementsCompiler\obj\x86\Debug\RequirementsCompiler.pdb
+L:\Repositories\DocumentGenerator\src\RequirementsCompiler\bin\Debug\RequirementsCompiler.exe
+L:\Repositories\DocumentGenerator\src\RequirementsCompiler\bin\Debug\RequirementsCompiler.pdb
+L:\Repositories\DocumentGenerator\src\RequirementsCompiler\obj\x86\Debug\ResolveAssemblyReference.cache

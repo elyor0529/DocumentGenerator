@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="modules"
+    targetNamespace="http://tempuri.org/modules.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/modules.xsd"
+    xmlns:mstns="http://tempuri.org/modules.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:simpleType name="Priority">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="High"/>
+      <xs:enumeration value="Low"/>
+      <xs:enumeration value="Urgent"/>
+      <xs:enumeration value="TBD"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="License">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Open-Source"/>
+      <xs:enumeration value="Scaffeine"/>
+      <xs:enumeration value="Proprietary"/>
+      <xs:enumeration value="TBD"/>
+      <xs:enumeration value="Other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Proposed"/>
+      <xs:enumeration value="Pre-Alpha"/>
+      <xs:enumeration value="Alpha"/>
+      <xs:enumeration value="Beta"/>
+      <xs:enumeration value="Production"/>
+      <xs:enumeration value="Obsolete"/>
+      <xs:enumeration value="Depricated"/>
+      <xs:enumeration value="On Hold"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="Area">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Development"/>
+      <xs:enumeration value="Analysis"/>
+      <xs:enumeration value="Testing"/>
+      <xs:enumeration value="Architecture"/>
+      <xs:enumeration value="Design"/>
+      <xs:enumeration value="Other"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="Workload">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Heavy"/>
+      <xs:enumeration value="Light"/>
+      <xs:enumeration value="Average"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="Expertise">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Expert"/>
+      <xs:enumeration value="Novice"/>
+      <xs:enumeration value="Mid-Level"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="Module">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Status" type="Status"/>
+      <xs:element name="Priority" type="Priority"/>
+      <xs:element name="Version" type="xs:string"/>
+      <xs:element name="License" type="License"/>
+      <xs:element name="Overview" type="xs:string"/>
+      <xs:element name="Features">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Feature" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Name" type="xs:string"/>
+                  <xs:element name="Description" type="xs:string"/>
+                  <xs:element name="Area" type="Area"/>
+                  <xs:element name="Priority" type="Priority"/>
+                  <xs:element name="Remaining" type="xs:int"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>            
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Technologies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Technology" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Name" type="xs:string"/>
+                  <xs:element name="Expertise" type="Expertise"/>
+                  <xs:element name="Workload" type="Workload"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Dependencies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Dependency" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Modules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Module" type="Module" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

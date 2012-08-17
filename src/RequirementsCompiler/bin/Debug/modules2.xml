@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Modules xmlns="http://tempuri.org/modules.xsd">
+  <Module>
+    <Name>ScaffR</Name>
+    <Version>1.1.1</Version>
+    <License>Open-Source</License>
+    <Overview>Allows for enhanced code generation in Visual Studio, essential for every project</Overview>
+    <Technologies>
+      <Technology>
+        <Name>Powershell</Name>
+        <Expertise>Expert</Expertise>
+        <Workload>Heavy</Workload>
+      </Technology>
+      <Technology>
+        <Name>C#</Name>
+        <Expertise>Novice</Expertise>
+        <Workload>Light</Workload>
+      </Technology>
+      <Technology>
+        <Name>ASP.NET MVC</Name>
+        <Expertise>Mid Level</Expertise>
+        <Workload>Average</Workload>
+      </Technology>
+    </Technologies>
+    <Dependencies>
+      <Dependency>T4Scaffolding</Dependency>
+    </Dependencies>
+  </Module>
+  <Module>
+    <Name>anyType</Name>
+    <Version>anyType</Version>
+    <License>anyType</License>
+    <Overview>anyType</Overview>
+    <Technologies>
+      <Technology>
+        <Name>anyType</Name>
+        <Expertise>Expert</Expertise>
+        <Workload>Heavy</Workload>
+      </Technology>
+      <Technology>
+        <Name>anyType</Name>
+        <Expertise>Novice</Expertise>
+        <Workload>Light</Workload>
+      </Technology>
+      <Technology>
+        <Name>anyType</Name>
+        <Expertise>Mid Level</Expertise>
+        <Workload>Average</Workload>
+      </Technology>
+    </Technologies>
+    <Dependencies>
+      <Dependency>anyType</Dependency>
+    </Dependencies>
+  </Module>
+  <Module>
+    <Name>anyType</Name>
+    <Version>anyType</Version>
+    <License>anyType</License>
+    <Overview>anyType</Overview>
+    <Technologies>
+      <Technology>
+        <Name>anyType</Name>
+        <Expertise>Expert</Expertise>
+        <Workload>Heavy</Workload>
+      </Technology>
+      <Technology>
+        <Name>anyType</Name>
+        <Expertise>Novice</Expertise>
+        <Workload>Light</Workload>
+      </Technology>
+      <Technology>
+        <Name>anyType</Name>
+        <Expertise>Mid Level</Expertise>
+        <Workload>Average</Workload>
+      </Technology>
+    </Technologies>
+    <Dependencies>
+      <Dependency>anyType</Dependency>
+    </Dependencies>
+  </Module>
+</Modules>

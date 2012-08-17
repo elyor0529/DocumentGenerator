@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.7" productVersion="14.0.0" PIVersion="1.0.0.0" href="file:///L:\Repositories\DocumentGenerator\tools\SpecBuilder.xsn" name="urn:schemas-microsoft-com:office:infopath:SpecBuilder:http---tempuri-org-modules-xsd" language="en-us" ?><?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.3"?><mstns:Modules xmlns:mstns="http://tempuri.org/modules.xsd">
+  <mstns:Module>
+    <mstns:Name>ScaffR</mstns:Name>
+    <mstns:Status>Alpha</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.1</mstns:Version>
+    <mstns:License>Open-Source</mstns:License>
+    <mstns:Overview>Provides the underlying framework for scaffolding complex code structures.  Every ScaffR-enabled module has a dependency on this Module</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Better help files</mstns:Name>
+        <mstns:Description></mstns:Description>
+        <mstns:Area>Analysis</mstns:Area>
+        <mstns:Priority>Low</mstns:Priority>
+        <mstns:Remaining>1</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>T4Scaffolding</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>ScaffR.Backend</mstns:Name>
+    <mstns:Status>Alpha</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.2.0</mstns:Version>
+    <mstns:License>Open-Source</mstns:License>
+    <mstns:Overview>Provides the typical N-Tier architecture for the solution.</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Dependency Management</mstns:Name>
+        <mstns:Description>Need to move out all dependencies to website.  Needs to work from console app.</mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>4</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Novice</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>WCF</mstns:Name>
+        <mstns:Expertise>Mid-Level</mstns:Expertise>
+        <mstns:Workload>Light</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>ASP.NET MVC</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Average</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>ScaffR</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  
+  
+  
+  <mstns:Module>
+    <mstns:Name>ScaffR.Ninject</mstns:Name>
+    <mstns:Status>Alpha</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.0</mstns:Version>
+    <mstns:License>Open-Source</mstns:License>
+    <mstns:Overview>Provides dependency-injection support for ScaffR-Enabled modules</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Powershell Enhancements</mstns:Name>
+        <mstns:Description>Misc bug fixes and refactors</mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>5</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Mid-Level</mstns:Expertise>
+        <mstns:Workload>Average</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>ASP.NET MVC</mstns:Name>
+        <mstns:Expertise>Mid-Level</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>Ninject.MVC3</mstns:Dependency>
+      <mstns:Dependency>WebActivator</mstns:Dependency>
+      <mstns:Dependency>ScaffR</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>Scaffeine</mstns:Name>
+    <mstns:Status>Alpha</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.2</mstns:Version>
+    <mstns:License>Scaffeine</mstns:License>
+    <mstns:Overview>Provides the entire web framework for all Scaffeine products.  Provides security framework, email, notifications.</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Impersonation Framework</mstns:Name>
+        <mstns:Description>Need to design a better impersonation framework</mstns:Description>
+        <mstns:Area>Analysis</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>10</mstns:Remaining>
+      </mstns:Feature>
+      <mstns:Feature>
+        <mstns:Name>User Management</mstns:Name>
+        <mstns:Description>Allow site administrators to better manage access.</mstns:Description>
+        <mstns:Area>Analysis</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>10</mstns:Remaining>
+      </mstns:Feature>
+      
+      
+      <mstns:Feature>
+        <mstns:Name>Thorough QA</mstns:Name>
+        <mstns:Description>Top to bottom QA</mstns:Description>
+        <mstns:Area>Testing</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>20</mstns:Remaining>
+      </mstns:Feature>
+      <mstns:Feature>
+        <mstns:Name>Acceptance Criteria</mstns:Name>
+        <mstns:Description>Need better acceptance Criteria</mstns:Description>
+        <mstns:Area>Analysis</mstns:Area>
+        <mstns:Priority>Low</mstns:Priority>
+        <mstns:Remaining>5</mstns:Remaining>
+      </mstns:Feature>
+    <mstns:Feature>
+									<mstns:Name>Bug Fixes</mstns:Name>
+									<mstns:Description>Various bug fixes</mstns:Description>
+									<mstns:Area>Testing</mstns:Area>
+									<mstns:Priority>High</mstns:Priority>
+									<mstns:Remaining>14</mstns:Remaining>
+								</mstns:Feature></mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Mid-Level</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>ASP.NET MVC</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>JavaScript</mstns:Name>
+        <mstns:Expertise>Mid-Level</mstns:Expertise>
+        <mstns:Workload>Light</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>CSS</mstns:Name>
+        <mstns:Expertise>Mid-Level</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>T4Scaffolding</mstns:Dependency>
+      <mstns:Dependency>WebApi.All</mstns:Dependency>
+      <mstns:Dependency>ScaffR</mstns:Dependency>
+      <mstns:Dependency>ScaffR.Backend</mstns:Dependency>
+      <mstns:Dependency>ScaffR.Ninject</mstns:Dependency>
+      <mstns:Dependency>ScaffR.Bootstrap</mstns:Dependency>
+      <mstns:Dependency>MvcMailer</mstns:Dependency>
+      <mstns:Dependency>jQuery.UI.Combined</mstns:Dependency>
+      <mstns:Dependency>jQuery</mstns:Dependency>
+      <mstns:Dependency>knockoutjs</mstns:Dependency>
+      <mstns:Dependency>dotless</mstns:Dependency>
+      <mstns:Dependency>AutoMapper</mstns:Dependency>
+      <mstns:Dependency>SignalR</mstns:Dependency>
+      <mstns:Dependency>SignalR.Client</mstns:Dependency>
+      <mstns:Dependency>SignalR.Hosting.Asp.Net</mstns:Dependency>
+      <mstns:Dependency>SignalR.Hosting.Common</mstns:Dependency>
+      <mstns:Dependency>SignalR.Js</mstns:Dependency>
+      <mstns:Dependency>SignalR.Server</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>Scaffeine.CRM</mstns:Name>
+    <mstns:Status>Alpha</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.2</mstns:Version>
+    <mstns:License>Scaffeine</mstns:License>
+    <mstns:Overview>Customer management module.  Allows complete management of customer data.</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Various Enhancements</mstns:Name>
+        <mstns:Description></mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>Low</mstns:Priority>
+        <mstns:Remaining>10</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>ASP.NET MVC</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>JavaScript</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Average</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Novice</mstns:Expertise>
+        <mstns:Workload>Light</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency></mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>Scaffeine.Commerce</mstns:Name>
+    <mstns:Status>Pre-Alpha</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>0.1</mstns:Version>
+    <mstns:License>Open-Source</mstns:License>
+    <mstns:Overview>Provides the generic interfaces and domain models for any module that has dependency on customers, ordering, shopping cart, or catalog.</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Domain Modeling</mstns:Name>
+        <mstns:Description>Write the domain classes and relationships between Customer, Order, ShoppingCart, and Catalog</mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>10</mstns:Remaining>
+      </mstns:Feature>
+      <mstns:Feature>
+        <mstns:Name>Generic Providers</mstns:Name>
+        <mstns:Description>Write generic providers for accessing commerce-related data.</mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>5</mstns:Remaining>
+      </mstns:Feature>
+      <mstns:Feature>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Description>Better cmdlets and installation refactors</mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>Low</mstns:Priority>
+        <mstns:Remaining>5</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Average</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Novice</mstns:Expertise>
+        <mstns:Workload>Light</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>ScaffR</mstns:Dependency>
+      <mstns:Dependency>ScaffR.Backend</mstns:Dependency>
+      <mstns:Dependency>ScaffR.Providers</mstns:Dependency>
+      <mstns:Dependency>ScaffR.CRM</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>Scaffeine.Catalog</mstns:Name>
+    <mstns:Status>Proposed</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.0</mstns:Version>
+    <mstns:License>Scaffeine</mstns:License>
+    <mstns:Overview>Allow admins to construct catalog items that are browsable by end users.  Provides support for categories, departments, and catalog items.  Options are not supported in this version.</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Implementation</mstns:Name>
+        <mstns:Description>Core implementation of the features described.</mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>40</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>ASP.NET MVC</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>CSS/Less</mstns:Name>
+        <mstns:Expertise>Novice</mstns:Expertise>
+        <mstns:Workload>Light</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Novice</mstns:Expertise>
+        <mstns:Workload>Light</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>Scaffeine.Photos</mstns:Dependency>
+      <mstns:Dependency>Scaffeine</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>Scaffeine.Photos</mstns:Name>
+    <mstns:Status>Alpha</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1</mstns:Version>
+    <mstns:License>Scaffeine</mstns:License>
+    <mstns:Overview>Support for photo uploading to file location.  Ability to save and retrieve thumbnails of configurable sizes.</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Implementation</mstns:Name>
+        <mstns:Description>Do the work</mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>30</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>ASP.NET MVC</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>Scaffeine</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>Scaffeine.Catalog.Search</mstns:Name>
+    <mstns:Status>Proposed</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.0</mstns:Version>
+    <mstns:License>Scaffeine</mstns:License>
+    <mstns:Overview>Will provide advanced searching capabilities for the catalog.</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Design</mstns:Name>
+        <mstns:Description>Need to design solution</mstns:Description>
+        <mstns:Area>Analysis</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>10</mstns:Remaining>
+      </mstns:Feature>
+    <mstns:Feature>
+									<mstns:Name>Implementation</mstns:Name>
+									<mstns:Description>Could be less</mstns:Description>
+									<mstns:Area>Development</mstns:Area>
+									<mstns:Priority>High</mstns:Priority>
+									<mstns:Remaining>20</mstns:Remaining>
+								</mstns:Feature></mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>JavaScript</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>Scaffeine.Catalog</mstns:Dependency>
+      <mstns:Dependency>Scaffeine.Search</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>Scaffeine.Search</mstns:Name>
+    <mstns:Status>Proposed</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>0.1</mstns:Version>
+    <mstns:License>Scaffeine</mstns:License>
+    <mstns:Overview>Optimizes a particular domain for search.  Ability to set indexes on specific fields of a domain class to make them indexed in the database.</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Research &amp; Development</mstns:Name>
+        <mstns:Description>Need to find out if EF supports this natively, otherwise, need to find an approach that would work.</mstns:Description>
+        <mstns:Area>Analysis</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>15</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>SQL</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>C#</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>EntityFramework</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>ScaffR.Backend</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>GBase.Design</mstns:Name>
+    <mstns:Status>Proposed</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.0</mstns:Version>
+    <mstns:License>Proprietary</mstns:License>
+    <mstns:Overview>Will provide the visual interface for GBase Design</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Implementation</mstns:Name>
+        <mstns:Description></mstns:Description>
+        <mstns:Area>Design</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>30</mstns:Remaining>
+      </mstns:Feature>
+      <mstns:Feature>
+        <mstns:Name>Import assets</mstns:Name>
+        <mstns:Description></mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>30</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>Html</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>CSS/Less</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Mid-Level</mstns:Expertise>
+        <mstns:Workload>Average</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>ScaffR.Bootstrap</mstns:Dependency>
+      <mstns:Dependency>Scaffeine</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>GBase.Configuration</mstns:Name>
+    <mstns:Status>Proposed</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.0</mstns:Version>
+    <mstns:License>Proprietary</mstns:License>
+    <mstns:Overview>Setup the repository for GBase.Configuration, Setup build server</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>GitHub</mstns:Name>
+        <mstns:Description>Setup source control repository on GitHub</mstns:Description>
+        <mstns:Area>Other</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>1</mstns:Remaining>
+      </mstns:Feature>
+      <mstns:Feature>
+        <mstns:Name>Google Apps</mstns:Name>
+        <mstns:Description>Setup google apps, or wire up alternate email mail system</mstns:Description>
+        <mstns:Area>Other</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>1</mstns:Remaining>
+      </mstns:Feature>
+      <mstns:Feature>
+        <mstns:Name>Configuration</mstns:Name>
+        <mstns:Description>Various configuration features, site title, etc</mstns:Description>
+        <mstns:Area>Other</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>2</mstns:Remaining>
+      </mstns:Feature>
+    </mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>ASP.NET MVC</mstns:Name>
+        <mstns:Expertise>Novice</mstns:Expertise>
+        <mstns:Workload>Average</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>GBase.Design</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+  <mstns:Module>
+    <mstns:Name>GBase.DataImport</mstns:Name>
+    <mstns:Status>Proposed</mstns:Status>
+    <mstns:Priority>High</mstns:Priority>
+    <mstns:Version>1.0</mstns:Version>
+    <mstns:License>Proprietary</mstns:License>
+    <mstns:Overview>This module will provide the following functions…</mstns:Overview>
+    <mstns:Features>
+      <mstns:Feature>
+        <mstns:Name>Data Import (Database)</mstns:Name>
+        <mstns:Description>Need to design…</mstns:Description>
+        <mstns:Area>Development</mstns:Area>
+        <mstns:Priority>High</mstns:Priority>
+        <mstns:Remaining>20</mstns:Remaining>
+      </mstns:Feature>
+      
+    <mstns:Feature>
+									<mstns:Name>Data Import (Assets)</mstns:Name>
+									<mstns:Description></mstns:Description>
+									<mstns:Area>Development</mstns:Area>
+									<mstns:Priority>High</mstns:Priority>
+									<mstns:Remaining>10</mstns:Remaining>
+								</mstns:Feature></mstns:Features>
+    <mstns:Technologies>
+      <mstns:Technology>
+        <mstns:Name>Powershell</mstns:Name>
+        <mstns:Expertise>Expert</mstns:Expertise>
+        <mstns:Workload>Heavy</mstns:Workload>
+      </mstns:Technology>
+    </mstns:Technologies>
+    <mstns:Dependencies>
+      <mstns:Dependency>Scaffeine.Ordering</mstns:Dependency>
+    </mstns:Dependencies>
+  </mstns:Module>
+</mstns:Modules>
